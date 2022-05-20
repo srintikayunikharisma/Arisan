@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pink"
+    tools:context=".EditActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="ARISAN"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+        android:id="@+id/nama"
+        android:text="Nama"
+        android:textColor="@color/white"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="15dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama"
+        android:layout_marginTop="1dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/iuran"
+        android:text="Iuran"
+        android:textColor="@color/white"
+        android:layout_below="@id/editnama"
+        android:layout_marginLeft="15dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editiuran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iuran"
+        android:layout_marginTop="10dp"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnsimpan"
+        android:layout_below="@id/editiuran"
+        android:layout_marginTop="30dp"
+        android:text="  SIMPAN "
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
